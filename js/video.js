@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
 document.querySelector("#play").addEventListener("click", function () {
 	console.log("Play Video");
 	video.play();
-	document.getElementById("volume").textContent = (video.volume * 100) + "%";
+	document.getElementById("volume").innerText = (video.volume * 100) + "%";
 });
 
 // Pause Button

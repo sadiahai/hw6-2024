@@ -1,4 +1,4 @@
-var video;
+var video = document.getElementById("player1");
 
 // Page Load
 window.addEventListener("load", function () {
@@ -59,7 +59,7 @@ document.querySelector("#mute").addEventListener("click", function () {
 document.getElementById("slider").addEventListener("input", function () {
 	video.volume = this.value / 100;
 	console.log("Current volume : " + video.volume);
-	document.getElementById("#volume").textContent = (video.volume * 100) + "%";
+	document.getElementById("volume").textContent = (video.volume * 100) + "%";
 	console.log("New set volume : " + video.volume);
 });
 
